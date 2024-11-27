@@ -85,15 +85,15 @@ void main() {
     vec2 uv = gl_FragCoord.xy / resolution.xy;
     float slowTime = time * 0.40;  
     
-    float n1 = snoise(uv * 1.1 + slowTime * 0.15);
-    float n2 = snoise(uv * 0.8 - slowTime * 0.045);
-    float n3 = snoise(uv * 1.4 + slowTime * 0.08);
-    float n4 = snoise(uv * 0.6 - slowTime * 0.085);
+    float n1 = snoise(uv * 1.1 + slowTime * 0.25);
+    float n2 = snoise(uv * 0.8 - slowTime * 0.055);
+    float n3 = snoise(uv * 1.4 + slowTime * 0.20);
+    float n4 = snoise(uv * 0.6 - slowTime * 0.095);
     
     vec3 color1 = getEvolvingColor(time, 0.007, 0.0);
     vec3 color2 = getEvolvingColor(time, 0.006, 0.25);
     vec3 color3 = getEvolvingColor(time, 0.008, 0.5);
-    vec3 color4 = getEvolvingColor(time, 0.0065, 0.75);
+    vec3 color4 = getEvolvingColor(time, 0.0065, 0.85);
     
     float blend1 = smootherstep((n1 * 0.3 + 0.5) * 0.5 + 0.25);
     float blend2 = smootherstep((n2 * 0.3 + 0.5) * 0.4 + 0.3);
