@@ -2,7 +2,6 @@ import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import { IoSparkles } from "react-icons/io5";
 import Header from "../components/Header";
-import FluidBackground from "../components/FluidBackground";
 import ProjectCard from "../components/ProjectCard";
 import PersonCard from "../components/PersonCard";
 import { team } from "../data/team";
@@ -22,7 +21,6 @@ const Index: React.FC = () => {
 
   return (
     <div className="relative">
-      <FluidBackground />
       <div className="relative z-10">
         <Header />
         <main className="text-white relative overflow-x-hidden">

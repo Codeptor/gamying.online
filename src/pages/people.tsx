@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import Background from "../components/Background";
 import PersonCard from "../components/PersonCard";
 import { team } from "../data/team";
 
@@ -7,7 +6,6 @@ const People = () => {
   return (
     <>
       <Header />
-      <Background />
       <main className="min-h-screen w-full text-white relative overflow-hidden">
         <div className="relative z-10">
           <div className="container mx-auto px-4 pt-24 pb-16">

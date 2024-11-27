@@ -4,7 +4,13 @@ import "../styles/base.css";
 import "../styles/components.css";
 import "../styles/utilities.css";
 import type { AppProps } from "next/app";
+import FluidBackground from "../components/FluidBackground";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <FluidBackground />
+      <Component {...pageProps} />
+    </>
+  );
 }
